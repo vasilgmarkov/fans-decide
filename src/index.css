@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Orbitron", sans-serif;
+}
+
+.makeStyles-root-1 {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+#header > header,
+#footer > .MuiBottomNavigation-root {
+  background-color: #277f31;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+a > button > span,
+a > h6,
+a > svg {
+  color: white;
+}
+
+button.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected {
+  color: white;
+}
+
+.MuiTypography-h6 {
+  display: flex;
+}
+.MuiTypography-h6 > svg {
+  margin-right: 5px;
+  align-self: center;
+}
+
+li.MuiGridListTile-root {
+  border: 2px solid #6db33f;
+}
+
+li.MuiGridListTile-root:first-child {
+  margin-top: 50px;
+}
+
+li.MuiGridListTile-root:last-child {
+  margin-bottom: 55px;
+}
+
+div > button.MuiIconButton-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* LOGIN */
+
+#login,
+#signUp {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  background-color: #eeeeee2b;
+  margin-top: 10vh;
+}
+
+#login > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+div > form {
+  justify-content: center !important;
+}
+
+form .MuiFormControl-root {
+  width: 100%;
+  margin: 8px;
+}
+#login > div > form div + button,
+#signUp > div > form div + button {
+  background-color: #277f31;
+  margin: 5px 8px 50px 8px;
+  border-radius: 30px;
+  padding: 10px;
+  width: 100%;
+  color: white;
+}
+#login > div > button {
+  /* margin-top: 8px;
+  color: #6db33f;
+  border: 1px solid rgba(63, 181, 67, 0.5);
+  align-self: center; */
+  background-color: #3a75d7;
+  margin: 8px;
+  border-radius: 30px;
+  padding: 10px;
+}
+#login
+  > div
+  > button
+  > span
+  > span.MuiButton-startIcon.MuiButton-iconSizeMedium {
+  position: absolute;
+  left: 10px;
+}
+#login > div > p {
+  align-self: center;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #6db33f !important;
+}
+
+form .MuiButton-outlinedPrimary {
+  color: #6db33f;
+  border: 1px solid rgba(63, 181, 67, 0.5);
+}
+
+#rentBike {
+  display: flex;
+  /* height: 100vh; */
+  align-items: center;
+  justify-content: space-around;
+}
+#rentBike > div > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+#rentBike .MuiCardActions-root {
+  justify-content: center;
+}
+#rentBike > div {
+  width: 100%;
+}
+#rentBike .MuiCardActions-root > div {
+  width: 20%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Dashboard */
+#dashboard {
+  height: 100vh;
+}
+#dashboard > div {
+  padding-top: 60px;
+  display: flex;
+}
+#full-width-tabpanel-0 > div {
+  padding-top: 10px;
+}
+#dashboard > div > div > div > div > div {
+  margin-bottom: 20px;
+}
+#full-width-tabpanel-1 > div > div {
+  margin-bottom: 25px;
+}
+#full-width-tabpanel-1 > div > div > div.MuiCardContent-root > p,
+#full-width-tabpanel-0 > div > div > div.MuiCardContent-root > p {
+  display: flex;
+  flex-direction: column;
+}
+p > span > span {
+  font-weight: 900;
+  color: black;
+}
+
+#full-width-tabpanel-1 > div > div > div.MuiCardActions-root,
+#full-width-tabpanel-0 > div > div > div.MuiCardActions-root {
+  display: flex;
+  justify-content: center;
+}
+
+#full-width-tabpanel-0 > div > div > div.MuiCardContent-root {
+  padding-bottom: 0px;
+}
+#full-width-tabpanel-0 > div > div > div.MuiCardContent-root ~ div > button {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: 1px solid #6db33f;
+  border-radius: 5px;
+}
+/** EXTRA **/
+.MuiTypography-h6 {
+  align-items: center;
+}
+.MuiTypography-h6 > svg {
+  margin-right: 0px;
+}
+.MuiTypography-h6 > span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: baseline;
+}
+.MuiTypography-h6 > span > svg:first-child {
+  font-size: 18px;
+}
+.MuiTypography-h6 > span > svg:nth-child(2) {
+  font-size: 40px;
+}
+
+#landing {
+  height: 100vh;
+  display: flex;
+  background-color: #277f31;
+  flex-direction: column;
+  justify-content: center;
+}
+#landing h6 {
+  color: white;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+
+div + h6 > span {
+  font-size: 20px;
+}
