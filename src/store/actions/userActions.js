@@ -18,6 +18,10 @@ export const login = user => async dispatch => {
             payload: user.data()
           });
         });
+      dispatch({
+        type: ERROR,
+        payload: null
+      });
     })
     .catch(err => {
       console.log(err);
@@ -64,6 +68,10 @@ export const createUser = user => async dispatch => {
             .auth()
             .createUserWithEmailAndPassword(user.email, user.password)
             .then(res => {
+              dispatch({
+                type: ERROR,
+                payload: null
+              });
               return db
                 .firestore()
                 .collection("users")

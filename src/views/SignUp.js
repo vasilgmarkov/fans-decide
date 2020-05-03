@@ -116,7 +116,11 @@ function SignUp() {
       }
     }
     if (send) {
-      dispatch(createUser(values));
+      if (values.password.length < 6) {
+        alert("Password should be at least 6 characters");
+      } else {
+        dispatch(createUser(values));
+      }
     } else {
       alert("Wrong data!");
     }
@@ -201,10 +205,6 @@ function SignUp() {
             type="text"
             variant="outlined"
             onChange={handleChange("email")}
-            error={error && error.error.includes("email")}
-            helperText={
-              error && error.error.includes("email") ? error.error : null
-            }
           />
           <TextField
             id="outlined-user"
@@ -212,10 +212,6 @@ function SignUp() {
             type="text"
             variant="outlined"
             onChange={handleChange("username")}
-            error={error && error.error.includes("username")}
-            helperText={
-              error && error.error.includes("username") ? error.error : null
-            }
           />
 
           <FormControl
@@ -243,10 +239,6 @@ function SignUp() {
                 </InputAdornment>
               }
               labelWidth={70}
-              error={error && error.error.includes("password")}
-              helperText={
-                error && error.error.includes("password") ? error.error : null
-              }
             />
           </FormControl>
           <FormControl variant="outlined" className={classes.formControl}>
