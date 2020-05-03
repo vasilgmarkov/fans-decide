@@ -18,6 +18,7 @@ import DeleteForeverIcon from "@material-ui/icons/DeleteForever";
 import Select from "@material-ui/core/Select";
 import Avatar from "@material-ui/core/Avatar";
 import db from "../config/fbConfig";
+import { Redirect } from "react-router-dom";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -160,9 +161,7 @@ function SignUp() {
 
   //RENDER
   if (isAuthenticated) {
-    setTimeout(() => {
-      history.push("/home");
-    }, 10);
+    return <Redirect to="/home" />;
   }
   return (
     <div id="signUp">
