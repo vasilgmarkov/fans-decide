@@ -195,7 +195,7 @@ function SignUp() {
                 />
               ]
             ) : (
-              <span> Click to capture</span>
+              <span> Click to select profile image </span>
             )}
           </label>
           <input type="file" hidden onChange={handleChange("file")} id="file" />
